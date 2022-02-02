@@ -13,9 +13,13 @@
 		4D98C33827AA493E00A29539 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D98C33627AA493E00A29539 /* Main.storyboard */; };
 		4D98C33A27AA493E00A29539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D98C33927AA493E00A29539 /* Assets.xcassets */; };
 		4D98C33D27AA493E00A29539 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D98C33B27AA493E00A29539 /* LaunchScreen.storyboard */; };
+		4D98C34527AA49C300A29539 /* AlertDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D98C34427AA49C300A29539 /* AlertDialogViewController.swift */; };
+		C56BD81FDEE6BDFB17DF51DE /* Pods_CustomAlertDialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EBD2E751B759FE2FC50BFA /* Pods_CustomAlertDialog.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07EBD2E751B759FE2FC50BFA /* Pods_CustomAlertDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomAlertDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		256586AA3A4DABBCFA245A4A /* Pods-CustomAlertDialog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAlertDialog.release.xcconfig"; path = "Target Support Files/Pods-CustomAlertDialog/Pods-CustomAlertDialog.release.xcconfig"; sourceTree = "<group>"; };
 		4D98C32D27AA493E00A29539 /* CustomAlertDialog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomAlertDialog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D98C33027AA493E00A29539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D98C33227AA493E00A29539 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		4D98C33927AA493E00A29539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D98C33C27AA493E00A29539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D98C33E27AA493E00A29539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D98C34427AA49C300A29539 /* AlertDialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDialogViewController.swift; sourceTree = "<group>"; };
+		DEA958C20B2CAA2F31167952 /* Pods-CustomAlertDialog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAlertDialog.debug.xcconfig"; path = "Target Support Files/Pods-CustomAlertDialog/Pods-CustomAlertDialog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C56BD81FDEE6BDFB17DF51DE /* Pods_CustomAlertDialog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14FC81E1A26B9A623471372B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEA958C20B2CAA2F31167952 /* Pods-CustomAlertDialog.debug.xcconfig */,
+				256586AA3A4DABBCFA245A4A /* Pods-CustomAlertDialog.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		394C965E13CBCC47C9593BB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07EBD2E751B759FE2FC50BFA /* Pods_CustomAlertDialog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4D98C32427AA493E00A29539 = {
 			isa = PBXGroup;
 			children = (
 				4D98C32F27AA493E00A29539 /* CustomAlertDialog */,
 				4D98C32E27AA493E00A29539 /* Products */,
+				14FC81E1A26B9A623471372B /* Pods */,
+				394C965E13CBCC47C9593BB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +83,7 @@
 		4D98C32F27AA493E00A29539 /* CustomAlertDialog */ = {
 			isa = PBXGroup;
 			children = (
+				4D98C34427AA49C300A29539 /* AlertDialogViewController.swift */,
 				4D98C33027AA493E00A29539 /* AppDelegate.swift */,
 				4D98C33227AA493E00A29539 /* SceneDelegate.swift */,
 				4D98C33427AA493E00A29539 /* ViewController.swift */,
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D98C34127AA493E00A29539 /* Build configuration list for PBXNativeTarget "CustomAlertDialog" */;
 			buildPhases = (
+				F9047B9947B736149BC31506 /* [CP] Check Pods Manifest.lock */,
 				4D98C32927AA493E00A29539 /* Sources */,
 				4D98C32A27AA493E00A29539 /* Frameworks */,
 				4D98C32B27AA493E00A29539 /* Resources */,
+				3943130BB6084460FBDEB4E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +162,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3943130BB6084460FBDEB4E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomAlertDialog/Pods-CustomAlertDialog-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomAlertDialog/Pods-CustomAlertDialog-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomAlertDialog/Pods-CustomAlertDialog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9047B9947B736149BC31506 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomAlertDialog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4D98C32927AA493E00A29539 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4D98C33527AA493E00A29539 /* ViewController.swift in Sources */,
+				4D98C34527AA49C300A29539 /* AlertDialogViewController.swift in Sources */,
 				4D98C33127AA493E00A29539 /* AppDelegate.swift in Sources */,
 				4D98C33327AA493E00A29539 /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +356,7 @@
 		};
 		4D98C34227AA493E00A29539 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEA958C20B2CAA2F31167952 /* Pods-CustomAlertDialog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +375,7 @@
 		};
 		4D98C34327AA493E00A29539 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 256586AA3A4DABBCFA245A4A /* Pods-CustomAlertDialog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
